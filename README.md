@@ -3,6 +3,13 @@ A large-scale benchmark dataset for color-event based visual tracking
 
 
 
+## TODO List 
+- [x] Paper (arXiv) release (2022-12-01)
+- [x] COESOT dataset release (2022-12-01)
+- [x] Evaluation Toolkit release (2022-12-01)
+- [x] Source Code release (2022-12-01)
+- [x] Tracking Models release (2022-12-01)
+
 
 ### Environment: 
 
