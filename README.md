@@ -46,4 +46,14 @@ A large-scale benchmark dataset for color-event based visual tracking
 
 ### Acknowledgement: 
 
-### Citation: 
+##### Citation
+```bibtex
+@article{tang2022coesot,
+  title={Revisiting Color-Event based Tracking: A Unified Network, Dataset, and Metric},
+  author={Tang, Chuanming and Wang, Xiao and Huang, Ju and Jiang, Bo and Zhu, Lin and Zhang, Jianlin and Wang, Yaowei and Tian, Yonghong},
+  journal={arxiv pre-print},
+  year={2022}
+}
+```
+
+
