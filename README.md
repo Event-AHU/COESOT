@@ -31,6 +31,7 @@ A large-scale benchmark dataset for color-event based visual tracking
             ├── xxx.aedat4
             ├── groundtruth.txt
             ├── absent.txt
+            ├── start_end_index.txt
         ├── ... 
     ├── Testing Subset
         ├── Video1
@@ -39,6 +40,7 @@ A large-scale benchmark dataset for color-event based visual tracking
             ├── xxx.aedat4
             ├── groundtruth.txt
             ├── absent.txt
+            ├── start_end_index.txt
         ├── ... 
 ```
 
