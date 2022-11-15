@@ -1,5 +1,6 @@
 # COESOT 
 A large-scale benchmark dataset for color-event based visual tracking 
+
 [Revisiting Color-Event based Tracking: A Unified Network, Dataset, and Metric](https://arxiv.org/abs/).
 
 
@@ -64,12 +65,6 @@ A large-scale benchmark dataset for color-event based visual tracking
 
 
 ## EFUTrack
-
-### Environment: 
-
-
-
-# EFUTrack
 
 [[Models]()]
 [[Raw Results]()]
