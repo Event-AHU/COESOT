@@ -50,7 +50,7 @@ A large-scale benchmark dataset for color-event based visual tracking
 3. run `Evaluate_COESOT_benchmark_SP_PR_only.m` for the overall performance evaluation, including SR, PR, NPR
 
 <p align="center">
-  <img width="85%" src="https://github.com/Event-AHU/COESOT/EFUTrack/blob/main/figures/SRPRNPR.png" alt="SR_PR_NPR"/>
+  <img width="85%" src="https://github.com/Event-AHU/COESOT/EFUTrack/blob/main/figures/SRPRNPR.jpg" alt="SR_PR_NPR"/>
 </p>
 
 4. run `plot_BOC.m` for BOC score evaluation and figure plot.
@@ -59,7 +59,7 @@ A large-scale benchmark dataset for color-event based visual tracking
 6. run `plot_radar.m` for attributes radar figrue plot.
 
 <p align="center">
-  <img width="85%" src="https://github.com/Event-AHU/COESOT/EFUTrack/blob/main/figures/Radar.png" alt="Radar"/>
+  <img width="85%" src="https://github.com/Event-AHU/COESOT/EFUTrack/blob/main/figures/radar1.png" alt="Radar"/>
 </p>
 
 
@@ -73,7 +73,7 @@ A large-scale benchmark dataset for color-event based visual tracking
 [Training logs]()]
 
 <p align="center">
-  <img width="85%" src="https://github.com/COESOT/EFUTrack/blob/main/assets/framework.png" alt="Framework"/>
+  <img width="85%" src="https://github.com/COESOT/EFUTrack/blob/main/assets/framework.jpg" alt="Framework"/>
 </p>
 
 
