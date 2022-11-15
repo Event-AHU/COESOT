@@ -1,0 +1,113 @@
+                    ####################  train on coesot and test on fe240    ####################
++event_x only head  pos_embed_x shared;
+e60 FE240  OSTrack256      | 26.12      | 28.73      | 9.29       | 38.49        | 25.80             |
+# train with event_x; test with rgb_x
+FE108 e70  OSTrack256      | 22.68      | 22.98      | 8.71       | 32.53        | 21.64             |
+# +rgb_x only head    pos_embed_x shared; e1=0.47; e2=0.73  e3=0.76, e10=0.84
+e20  FE240 OSTrack256      | 27.39      | 32.27      | 10.93      | 42.41        | 28.10             |
+
+
+FE108
+RSR OP0.50 OP0.75 RPR
+58.5 76.6 28.1 89.6  (CVPR22_STNet_FE240Hz)
+0.794|0.543          (visEvent_base_tracker FE108)
+63.4 81.3 34.4 92.4  (ICCV21, FE108, Baseline)
+
+                    ####################  train on FE240 and test on FE240   ####################
+1epoch=7min, 4x3090, bs=40x4, iter=375;  training time(30+10epoch) 5hours; test 30min;
+IOU: e1=0.49, e2=0.61, e3=0.63, e4=0.66, e5=
+fe240           | AUC        | OP50       | OP75       | Precision    | Norm Precision    |
+OSTrack256      | 43.42      | 50.85      | 16.40      | 69.26        | 43.33             |  e40
+
++ xcorr_weight  e1-iou=0.21; e2=0.; e3=
++ cross_attn; e1-iou=0.25; e2=0.56;e70=0.82
+e40  OSTrack256      | 43.92      | 50.87      | 16.91      | 70.54        | 44.18             |
+LR 0.001  e1=0.16; e2-0.50; e3-0.58
+e40  OSTrack256      | 40.81      | 47.16      | 15.92      | 64.19        | 40.67             |   no align datasets
+
+check details:
+1. event to voxel align in time, for test;
+2.
++ cross_attn x 2layers; e1=0.10; e2=0.43; e3=0.59
+OSTrack256      | 40.89      | 49.66      | 14.46      | 64.35        | 41.44             |   e10
+OSTrack256      | 36.15      | 36.64      | 10.46      | 62.66        | 30.78             |   e60
+
+train and use test to val:
+e1=0.19; e2=
+
+img-fusion:1/0.3 with training on coesot
+OSTrack256      | 18.95      | 18.51      | 4.93       | 32.19        | 15.98             |
+OSTrack256      | 32.37      | 35.46      | 9.28       | 52.43        | 32.48             |  e50
+both search and template fusion:1/0.3 with training on coesot
+OSTrack256      | 38.77      | 45.09      | 12.24      | 62.69        | 39.05             |  e50
+
+fusion(1+0.2)  4GPU e1=0.45; e2=0.64; e3=0.
+OSTrack256      | 51.97      | 62.79      | 21.29      | 81.97        | 54.10             | E50
+
+conv1d + conv2d;  e1=0.46; e2=0.65
+OSTrack256      | 50.28      | 62.07      | 23.16      | 77.43        | 53.35             |
+
+ not addweight; / 10 +0.5
+OSTrack256      | 38.12      | 40.50      | 12.42      | 64.85        | 33.64             | e30  val-e10-60.xx; val-e30-48.xx
+val-e5-IOU60.xx; val-e10-60.xx; val-e200-48.xx; val-e30-48.xx
+
+ not addweight; / 10 +0.5; lr 0.0001; (10-20)epoch
+base: e10  OSTrack256      | 36.89      | 40.10      | 11.70      | 61.08        | 33.17             |  e10
+re-generate voxel test set;
+e10
+e20  OSTrack256      | 36.63      | 39.51      | 11.45      | 61.28        | 32.47             |
+
+gray=0.05, with normalize; e1=0.08
+for fe240: gray=0.0, delete normalize.  e1=0.34; e2=51;e4=0.58     7min  12:30end;
+e30  OSTrack256      | 12.99      | 11.19      | 2.48       | 20.52        | 10.23             |
+
+OSTrack256      | 36.25      | 41.46      | 12.24      | 58.10        | 35.02             |  e20
+OSTrack256      | 40.64      | 46.71      | 14.60      | 64.92        | 40.19             |  e30
+
+normalize changes to 0.5/0.5/0.5
+OSTrack256      | 27.13      | 28.61      | 7.92       | 43.69        | 24.17             |
+togray=1; better than norm; but same with before.
+
+e20    OSTrack256      | 40.73      | 47.45      | 15.23      | 64.73        | 40.93             | train and test on start-2;
+test 2 versions:  NAS: start-2;  local_disk: start-1;
+train local_disk: start-1
+
+train and test on start-2;     AUC 40.73  e20
+train start-2, test start-1(local_disk):    now:   OSTrack256      | 38.61      | 41.33      | 12.45      | 64.48        | 34.05     e20
+train start-1(local), val start-1,  test start-2(NAS);  e30 OSTrack256      | 39.34      | 42.17      | 12.22      | 66.61        | 34.67             |
+train start-1, val start-1,  test start-1(local_disk);  e30 OSTrack256      | 43.96      | 51.67      | 17.69      | 69.16        | 44.74             |
+
+train+ self_attn: e1=0.45; e2=0.61; e3=
+OSTrack256      | 37.71      | 38.90      | 10.67      | 65.28        | 32.42             |  nas    e50
+OSTrack256      | 41.51      | 47.31      | 15.53      | 67.08        | 40.88             |  local  e50
+
+train:
+feature+xyz, without self.pos_embed_z/x, combine:  z, event_z, x, event_x ,  event_head:  e1=0.08
++ self.pos_embed_z/x;   e1=0.10
++ rgb-head;  0.09
+
+
+
+
++ xyz+feature. +  RGB-head, 0.44
++ event-head:  e1=0.28, e2=
++  RGB-head, +  without self.pos_embed_z/x,:  e5=0.10;
++  RGB-head, + xyz+feature. +
+| 9.92       | 6.14       | 1.62       | 13.33        | 6.54              |  e10
+OSTrack256      | 43.07      | 50.12      | 16.82      | 68.46        | 43.70             | e100
+OSTrack256      | 38.24      | 39.83      | 11.35      | 65.89        | 33.47             | e100
+OSTrack256      | 41.80      | 49.88      | 17.51      | 65.02        | 42.47             | local
+
+without CE modules
+e1=0.39, e2=
+OSTrack256      | 40.88      | 46.67      | 15.55      | 65.14        | 40.36             |  e70
+
+OSTrack256      | 50.88      | 60.56      | 21.00      | 78.99        | 51.30             | fe240
+
+OSTrack256      | 50.50      | 59.54      | 21.14      | 78.94        | 51.54             | 100 train all
+
+
+conv(4,4), shared embeding;
+OSTrack256      | 41.79      | 49.74      | 16.47      | 65.31        | 42.97             |  e10
+OSTrack256      | 41.72      | 47.88      | 16.27      | 66.76        | 41.94             |  e50
+
