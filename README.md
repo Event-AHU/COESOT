@@ -69,8 +69,70 @@ A large-scale benchmark dataset for color-event based visual tracking
 
 
 
+# EFUTrack
 
-### Acknowledgement: 
+[[Models]()]
+[[Raw Results]()]
+[Training logs]()]
+
+<p align="center">
+  <img width="85%" src="https://github.com/COESOT/EFUTrack/blob/main/assets/framework.png" alt="Framework"/>
+</p>
+
+
+Install env
+```
+conda create -n event python=3.7
+conda activate event
+bash install.sh
+```
+
+Run the following command to set paths for this project
+```
+python tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir ./output
+```
+
+After running this command, you can also modify paths by editing these two files
+```
+lib/train/admin/local.py  # paths about training
+lib/test/evaluation/local.py  # paths about testing
+```
+
+Then, put the tracking datasets COESOT in `./data`. 
+
+Download pre-trained [MAE ViT-Base weights](https://dl.fbaipublicfiles.com/mae/pretrain/mae_pretrain_vit_base.pth) and put it under `$PROJECT_ROOT$/pretrained_models`
+
+Download the model weights from [Google Drive]()
+Put the downloaded weights on `EFUTrack/output/checkpoints/train/efutrack`
+
+
+## Train & Test  & Evaluation
+```
+    # train
+    export CUDA_VISIBLE_DEVICES=0
+    python tracking/train.py --script ostrack --config vitb_256_mae_ce_32x4_coesot_ep100  \
+    --save_dir ./output --mode multiple --nproc_per_node 1 --use_wandb  0
+    # test
+    python tracking/test.py   ostrack vitb_256_mae_ce_32x4_coesot_ep100 --dataset coesot --threads 20 --num_gpus 1
+    # eval
+    python tracking/analysis_results.py --dataset coesot  --parameter_name vitb_256_mae_ce_32x4_coesot_ep100
+```
+
+
+### Test FLOPs, and Speed
+*Note:* The speeds reported in our paper were tested on a single RTX 3090 GPU.
+
+```
+# Profiling vitb_256_mae_ce_32x4_coesot_ep100
+python tracking/profile_model.py --script efutrack --config vitb_256_mae_ce_32x4_coesot_ep100
+```
+
+
+
+
+### Acknowledgments
+* Thanks for the [OSTrack](https://github.com/botaoye/OSTrack) and [PyTracking](https://github.com/visionml/pytracking) library 
+
 
 ### Citation: 
 ```bibtex
