@@ -4,7 +4,7 @@ from lib.test.utils.load_text import load_text
 import os
 
 
-class coesotDataset(BaseDataset):
+class COESOTDataset(BaseDataset):
 
     def __init__(self, split):
         super().__init__()

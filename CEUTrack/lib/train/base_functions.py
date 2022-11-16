@@ -1,7 +1,7 @@
 import torch
 from torch.utils.data.distributed import DistributedSampler
 # datasets related
-from lib.train.dataset import Coesot, Fe240, VisEvent
+from lib.train.dataset import Coesot, Fe108, VisEvent
 from lib.train.data import sampler, opencv_loader, processing, LTRLoader
 import lib.train.data.transforms as tfm
 from lib.utils.misc import is_main_process
@@ -28,7 +28,7 @@ def names2datasets(name_list: list, settings, image_loader):
     datasets = []
     for name in name_list:
         assert name in ["LASOT", "GOT10K_vottrain", "GOT10K_votval", "GOT10K_train_full", "GOT10K_official_val",
-                        "COCO17", "VID", "TRACKINGNET", "COESOT", "COESOT_VAL", "FE240", "FE240_VAL", "VisEvent", "VisEvent_VAL"]
+                        "COCO17", "VID", "TRACKINGNET", "COESOT", "COESOT_VAL", "FE108", "FE108_VAL", "VisEvent", "VisEvent_VAL"]
         if name == "LASOT":
             if settings.use_lmdb:
                 print("Building lasot dataset from lmdb")
@@ -81,10 +81,10 @@ def names2datasets(name_list: list, settings, image_loader):
             datasets.append(Coesot(settings.env.coesot_dir, split='train', image_loader=image_loader))
         if name == "COESOT_VAL":
             datasets.append(Coesot(settings.env.coesot_val_dir, split='val', image_loader=image_loader))
-        if name == "FE240":
-            datasets.append(Fe240(settings.env.fe240_dir, split='train', image_loader=image_loader))
-        if name == "FE240_VAL":
-            datasets.append(Fe240(settings.env.fe240_val_dir, split='val', image_loader=image_loader))
+        if name == "FE108":
+            datasets.append(Fe108(settings.env.fe108_dir, split='train', image_loader=image_loader))
+        if name == "FE108_VAL":
+            datasets.append(Fe108(settings.env.fe108_val_dir, split='val', image_loader=image_loader))
         if name == "VisEvent":
             datasets.append(VisEvent(settings.env.visevent_dir, split='train', image_loader=image_loader))
         if name == "VisEvent_VAL":
@@ -96,9 +96,9 @@ def names2datasets(name_list: list, settings, image_loader):
 def build_dataloaders(cfg, settings):
     # Data transform
     # transform_joint = tfm.Transform(tfm.ToGrayscale(probability=0.05), tfm.RandomHorizontalFlip(0.5))
-    transform_joint = tfm.Transform(tfm.ToGrayscale(probability=0.05))           # for FE240 p=0.5 else 0.05
+    transform_joint = tfm.Transform(tfm.ToGrayscale(probability=0.05))           # for FE108 p=0.5 else 0.05
 
-    transform_train = tfm.Transform(tfm.ToTensor(),     # tfm.RandomHorizontalFlip_Norm(0.5),  # FE240, not normalize.
+    transform_train = tfm.Transform(tfm.ToTensor(),     # tfm.RandomHorizontalFlip_Norm(0.5),  # FE108, not normalize.
                                    tfm.Normalize(mean=cfg.DATA.MEAN, std=cfg.DATA.STD)
                                     )
     transform_val = tfm.Transform(tfm.ToTensor(),

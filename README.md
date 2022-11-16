@@ -73,7 +73,7 @@ A large-scale benchmark dataset for color-event based visual tracking
 [Training logs]()]
 
 <p align="center">
-  <img width="85%" src="https://github.com/COESOT/blob/main/assets/framework.jpg" alt="Framework"/>
+  <img width="85%" src="https://github.com/COESOT/blob/main/figures/framework.jpg" alt="Framework"/>
 </p>
 
 

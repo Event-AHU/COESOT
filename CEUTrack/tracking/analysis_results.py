@@ -9,12 +9,12 @@ from lib.test.evaluation import get_dataset, trackerlist
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Run tracker on sequence or dataset.')
-    parser.add_argument('--dataset', type=str, default='coesot', help='coesot or fe240 or visevent or eed.')
-    parser.add_argument('--parameter_name', type=str, default='vitb_256_mae_ce_32x4_coesot_ep100', help='coesot or fe240 or visevent or eed.')
+    parser.add_argument('--dataset', type=str, default='coesot', help='coesot or fe108 or visevent or eed.')
+    parser.add_argument('--parameter_name', type=str, default='ceutrack_coesot', help='coesot or fe108 or visevent or eed.')
     args = parser.parse_args()
 
     trackers = []
-    dataset_name = args.dataset      # coesot  fe240
+    dataset_name = args.dataset      # coesot  fe108
     """stark"""
     # trackers.extend(trackerlist(name='stark_s', parameter_name='baseline', dataset_name=dataset_name,
     #                             run_ids=None, display_name='STARK-S50'))

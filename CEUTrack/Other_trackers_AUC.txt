@@ -12,7 +12,7 @@ SOTA Performance
 FE108
 RSR OP0.50 OP0.75 RPR
 63.4 81.3 34.4 92.4  (ICCV21)
-58.5 76.6 28.1 89.6  (CVPR22_STNet_FE240Hz)
+58.5 76.6 28.1 89.6  (CVPR22_STNet_FE108Hz)
 0.794|0.543          (visEvent_base_tracker FE108)
 
 

@@ -30,8 +30,8 @@ for videoID in range(len(file_folds)):
 #         i=i+1
 
 
-# data_path = r"/home/ioe/tcm/EventTracking/FE240/train"
-# save_path = r"/home/ioe/tcm/EventTracking/FE240/"
+# data_path = r"/home/ioe/tcm/EventTracking/FE108/train"
+# save_path = r"/home/ioe/tcm/EventTracking/FE108/"
 # data_path = r"/home/ioe/tcm/EventTracking/Visevent/test"
 # save_path = r"/home/ioe/tcm/EventTracking/Visevent/"
 # file_folds = os.listdir(data_path)

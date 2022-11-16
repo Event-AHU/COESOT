@@ -12,8 +12,8 @@ import shutil
 
 data_path = r"/media/ioe/2t/event_tracking_datasets/CODSOT_external_sequences"
 save_path = r"/media/ioe/2t/event_tracking_datasets/external233"
-# save_path = r"/home/ioe/tcm/EventTracking/FE240/test"
-# data_path = r"/home/ioe/tcm/FE240/test"
+# save_path = r"/home/ioe/tcm/EventTracking/FE108/test"
+# data_path = r"/home/ioe/tcm/FE108/test"
 file_folds = os.listdir(data_path)
 
 for videoID in range(len(file_folds)):

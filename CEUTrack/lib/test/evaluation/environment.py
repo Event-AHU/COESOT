@@ -11,7 +11,7 @@ class EnvSettings:
         self.network_path = '{}/networks/'.format(test_path)
         self.result_plot_path = '{}/result_plots/'.format(test_path)
         self.coesot_path =  ''
-        self.fe240_path =  ''
+        self.fe108_path =  ''
         self.visevent_path =  ''
 
 
@@ -50,7 +50,7 @@ class EnvSettings_ITP:
         self.network_path = os.path.join(save_dir, 'test/networks')
         self.result_plot_path = os.path.join(save_dir, 'test/result_plots')
         self.coesot_path = os.path.join(data_dir, 'COESOT')
-        self.fe240_path = os.path.join(data_dir, 'FE240')
+        self.fe108_path = os.path.join(data_dir, 'FE108')
         self.visevent_path = os.path.join(data_dir, 'VisEvent')
 
 

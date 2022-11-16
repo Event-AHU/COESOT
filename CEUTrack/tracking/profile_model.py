@@ -22,7 +22,7 @@ def parse_args():
     # for train
     parser.add_argument('--script', type=str, default='ceutrack', choices=['ceutrack'],
                         help='training script name')
-    parser.add_argument('--config', type=str, default='vitb_256_mae_ce_32x4_coesot_ep100', help='yaml configure file name')
+    parser.add_argument('--config', type=str, default='ceutrack_coesot', help='yaml configure file name')
     args = parser.parse_args()
 
     return args

@@ -13,8 +13,8 @@ def create_default_local_file():
         'pretrained_networks': 'self.workspace_dir + \'/pretrained_networks/\'',
         'coesot_dir': empty_str,
         'coesot_val_dir': empty_str,
-        'fe240_dir':  empty_str,
-        'fe240_val_dir':  empty_str,
+        'fe108_dir':  empty_str,
+        'fe108_val_dir':  empty_str,
         'visevent_dir': empty_str,
         'visevent_val_dir':  empty_str,
     })
@@ -44,12 +44,12 @@ def create_default_local_file_ITP_train(workspace_dir, data_dir):
         'workspace_dir': workspace_dir,
         'tensorboard_dir': os.path.join(workspace_dir, 'tensorboard'),    # Directory for tensorboard files.
         'pretrained_networks': os.path.join(workspace_dir, 'pretrained_networks'),        'coesot_dir': 'self.workspace_dir + \'/data/\'',
-        'coesot_val_dir': os.path.join(workspace_dir, 'data/coesot'),
-        'coesot_dir': os.path.join(workspace_dir, 'data/coesot'),
-        'fe240_dir':  os.path.join(workspace_dir, 'data/fe240'),
-        'fe240_val_dir': os.path.join(workspace_dir, 'data/fe240'),
-        'visevent_dir': os.path.join(workspace_dir, 'data/visevent'),
-        'visevent_val_dir':  os.path.join(workspace_dir, 'data/visevent'),
+        'coesot_val_dir': os.path.join(workspace_dir, 'data/COESOT/test'),
+        'coesot_dir': os.path.join(workspace_dir, 'data/COESOT/train'),
+        'fe108_dir':  os.path.join(workspace_dir, 'data/FE108/train'),
+        'fe108_val_dir': os.path.join(workspace_dir, 'data/FE108/test'),
+        'visevent_dir': os.path.join(workspace_dir, 'data/VisEvent/train'),
+        'visevent_val_dir':  os.path.join(workspace_dir, 'data/VisEvent/test'),
     })
 
     comment = {'workspace_dir': 'Base directory for saving network checkpoints.',

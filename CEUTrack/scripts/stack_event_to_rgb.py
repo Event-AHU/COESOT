@@ -40,8 +40,8 @@ import cv2 as cv
 if __name__ == '__main__':
     device = torch.device("cuda:4")
     # data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/train"
-    data_path = r"/home/ioe/tcm/FE240/train"
-    save_path = r"/home/ioe/tcm/FE240/train"
+    data_path = r"/home/ioe/tcm/FE108/train"
+    save_path = r"/home/ioe/tcm/FE108/train"
     video_files = os.listdir(data_path)
     dvs_img_interval = 1
 

@@ -26,7 +26,7 @@ dataset_dict = dict(
     lasot_extension_subset=DatasetInfo(module=pt % "lasotextensionsubset", class_name="LaSOTExtensionSubsetDataset",
                                        kwargs=dict()),
     coesot=DatasetInfo(module=pt % "coesot", class_name="COESOTDataset", kwargs=dict(split='test')),
-    fe240=DatasetInfo(module=pt % "fe240", class_name="FE240Dataset", kwargs=dict(split='test')),
+    fe108=DatasetInfo(module=pt % "fe108", class_name="FE108Dataset", kwargs=dict(split='test')),
     visevent=DatasetInfo(module=pt % "visevent", class_name="VisEventDataset", kwargs=dict(split='test')),
 )
 
