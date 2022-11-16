@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f1c363b-ded1-4ae8-bcd2-a630f8925555" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/ceutrack/ceutrack_coesot.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/ceutrack/ceutrack_coesot.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/ceutrack/ceutrack_fe108.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/ceutrack/ceutrack_fe108.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/ceutrack/ceutrack_visevent.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/ceutrack/ceutrack_visevent.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -39,8 +39,8 @@ MODEL:
     TYPE: vit_base_patch16_224_ce
     STRIDE: 16
     CE_LOC: [3, 6, 9]
-    CE_KEEP_RATIO: [1, 1, 1]    # [0.7, 0.7, 0.7]
-    CE_TEMPLATE_RANGE: 'CTR_POINT'  # choose between ALL, CTR_POINT, CTR_REC, GT_BOX
+    CE_KEEP_RATIO: [1, 1, 1]
+    CE_TEMPLATE_RANGE: 'CTR_POINT'
   HEAD:
     TYPE: CENTER
     NUM_CHANNELS: 256
@@ -49,28 +49,28 @@ TRAIN:
   DROP_PATH_RATE: 0.1
   CE_START_EPOCH: 0  # candidate elimination start epoch  20
   CE_WARM_EPOCH: 0  # candidate elimination warm up epoch 50
-  BATCH_SIZE: 8
+  BATCH_SIZE: 32
   EPOCH: 50
   GIOU_WEIGHT: 1     # 2.0
   L1_WEIGHT: 14       # 5.0
   FOCAL_WEIGHT: 1.0   # 1.5
   GRAD_CLIP_NORM: 0.1
-  LR: 0.0004              # 0.0004
-  LR_DROP_EPOCH: 30
+  LR: 0.0001
+  LR_DROP_EPOCH: 40
   NUM_WORKER: 8
   OPTIMIZER: ADAMW
   PRINT_INTERVAL: 50
   SCHEDULER:
 #    TYPE: step
     DECAY_RATE: 0.1
-    TYPE: Mstep
-    MILESTONES: [30, 40]
-    GAMMA: 0.1
+#    TYPE: Mstep
+#    MILESTONES: [40, 60]
+#    GAMMA: 0.1
   VAL_EPOCH_INTERVAL: 5
   WEIGHT_DECAY: 0.0001
   AMP: False
 TEST:
-  EPOCH: 60
+  EPOCH: 50
   SEARCH_FACTOR: 4.0
   SEARCH_SIZE: 256
   TEMPLATE_FACTOR: 2.0

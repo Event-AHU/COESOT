@@ -55,27 +55,22 @@ A large-scale benchmark dataset for color-event based visual tracking
 </p>
 
 4. run `plot_BOC.m` for BOC score evaluation and figure plot.
-
-<p align="right">
-  <img width="50%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/BOC_score.jpg" alt="Radar"/>
-</p>
-
-6. run `Evaluate_COESOT_benchmark_attributes.m` for 17 attributes analysis and figure saved in `$/res_fig/`
-7. run `plot_radar.m` for attributes radar figrue plot.
+5. run `plot_radar.m` for attributes radar figrue plot.
 
 <p align="center">
-  <img width="50%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/radar1.png" alt="Radar"/><img width="50%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/BOC_score.jpg" alt="Radar"/>
+  <img width="40%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/radar1.png" alt="Radar"/><img width="60%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/BOC_score.jpg" alt="Radar"/>
 </p>
 
+6. run `Evaluate_COESOT_benchmark_attributes.m` for 17 attributes analysis and figure saved in `$/res_fig/`. 
 
 
 
 
 ## EFUTrack
 
-[[Models]()]
-[[Raw Results]()]
-[Training logs]()]
+[[Models](xxx)]
+[[Raw Results](xxx)]
+[Training logs](xxx)]
 
 <p align="center">
   <img width="85%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/framework.jpg" alt="Framework"/>
@@ -102,10 +97,10 @@ lib/test/evaluation/local.py  # paths about testing
 
 Then, put the tracking datasets COESOT in `./data`. 
 
-Download pre-trained [MAE ViT-Base weights](https://dl.fbaipublicfiles.com/mae/pretrain/mae_pretrain_vit_base.pth) and put it under `$PROJECT_ROOT$/pretrained_models`
+Download pre-trained [MAE ViT-Base weights](https://dl.fbaipublicfiles.com/mae/pretrain/mae_pretrain_vit_base.pth) and put it under `$/pretrained_models`
 
 Download the model weights from [Google Drive]()
-Put the downloaded weights on `EFUTrack/output/checkpoints/train/efutrack`
+Put the downloaded weights on `$/output/checkpoints/train/efutrack`
 
 
 ## Train & Test  & Evaluation
@@ -115,7 +110,7 @@ Put the downloaded weights on `EFUTrack/output/checkpoints/train/efutrack`
     python tracking/train.py --script ceutrack --config vitb_256_mae_ce_32x4_coesot_ep100  \
     --save_dir ./output --mode multiple --nproc_per_node 1 --use_wandb  0
     # test
-    python tracking/test.py   ceutrack vitb_256_mae_ce_32x4_coesot_ep100 --dataset coesot --threads 20 --num_gpus 1
+    python tracking/test.py   ceutrack vitb_256_mae_ce_32x4_coesot_ep100 --dataset coesot --threads 4 --num_gpus 1
     # eval
     python tracking/analysis_results.py --dataset coesot  --parameter_name vitb_256_mae_ce_32x4_coesot_ep100
 ```
