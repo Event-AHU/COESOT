@@ -71,9 +71,9 @@ def extract_davis(aedat_file_path, dvs_img_interval):
 #######################################################################################################
 if __name__ == "__main__":
     device = torch.device("cuda:4")
-    # data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/train"
-    data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/train"
-    save_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/train"
+    # data_path = r"/home/ioe/xxxxx/EventTracking/COESOT/train"
+    data_path = r"/home/ioe/xxxxx/EventTracking/COESOT/train"
+    save_path = r"/home/ioe/xxxxx/EventTracking/COESOT/train"
     video_files = os.listdir(data_path)
     for videoID in range(len(video_files)):
         foldName = video_files[videoID]

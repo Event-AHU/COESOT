@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f1c363b-ded1-4ae8-bcd2-a630f8925555" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CEUTrack.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/evaluation/fe108dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/evaluation/fe108dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/coesot_choose_videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/coesot_choose_videos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/convert_bmp_to_png.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_bmp_to_png.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/convert_bmp_to_png_coesot.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_bmp_to_png_coesot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/convert_bmp_to_png_coesot_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_bmp_to_png_coesot_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/convert_event_to_timestamp.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_event_to_timestamp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/convert_event_to_timestamp_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_event_to_timestamp_new.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/convert_event_to_timestamp_new2.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_event_to_timestamp_new2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/copy_delete_folds_from_nasto_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/copy_delete_folds_from_nasto_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/copy_gtbbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/copy_gtbbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/copy_rgb_voxel_from_nas_to_disk.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/copy_rgb_voxel_from_nas_to_disk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/copy_visevent_from_nas_to_disk.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/copy_visevent_from_nas_to_disk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/event_to_voxel_FE108.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/event_to_voxel_FE108.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/event_to_voxel_coesot.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/event_to_voxel_coesot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/event_to_voxel_special_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/event_to_voxel_special_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/event_to_voxel_visevent.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/event_to_voxel_visevent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/extract_test_videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/extract_test_videos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/get_coesot_frames_num.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/get_coesot_frames_num.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/get_dataset_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/get_dataset_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/image_reconstructor.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/image_reconstructor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/load_nas_to_server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/load_nas_to_server.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/plot_coesot_center.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/plot_coesot_center.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/plot_coesot_center2.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/plot_coesot_center2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/read_aedat4.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/read_aedat4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/run_reconstruction_ours.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/run_reconstruction_ours.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/stack_event_to_rgb.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/stack_event_to_rgb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/visevent_get_useful_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/visevent_get_useful_list.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Hcx2lUVCUNJvG9X0NUJoPiIAQ6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="OSTrack" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="OSTrack" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="OSTrack" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="OSTrack" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="OSTrack" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="OSTrack" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="4f1c363b-ded1-4ae8-bcd2-a630f8925555" name="变更" comment="" />
+      <created>1668597969286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668597969286</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,8 +1,8 @@
 import os
 import shutil
 
-data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT233/CODSOT_external_sequences"
-save_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT233/"
+data_path = r"/home/ioe/xxxxx/EventTracking/COESOT/COESOT233/COESOT_external_sequences"
+save_path = r"/home/ioe/xxxxx/EventTracking/COESOT/COESOT233/"
 file_folds = os.listdir(data_path)
 
 for videoID in range(len(file_folds)):
@@ -30,10 +30,10 @@ for videoID in range(len(file_folds)):
 #         i=i+1
 
 
-# data_path = r"/home/ioe/tcm/EventTracking/FE108/train"
-# save_path = r"/home/ioe/tcm/EventTracking/FE108/"
-# data_path = r"/home/ioe/tcm/EventTracking/Visevent/test"
-# save_path = r"/home/ioe/tcm/EventTracking/Visevent/"
+# data_path = r"/home/ioe/xxxxx/EventTracking/FE108/train"
+# save_path = r"/home/ioe/xxxxx/EventTracking/FE108/"
+# data_path = r"/home/ioe/xxxxx/EventTracking/Visevent/test"
+# save_path = r"/home/ioe/xxxxx/EventTracking/Visevent/"
 # file_folds = os.listdir(data_path)
 #
 # for videoID in range(len(file_folds)):

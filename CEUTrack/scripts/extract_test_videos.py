@@ -1,8 +1,8 @@
 import os
 import shutil
 
-data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/video_seq_test"
-save_path = r"/home/ioe/tcm/EventTracking/CODSOT/videos/video_seq_test/"
+data_path = r"/home/ioe/xxxxx/EventTracking/COESOT/video_seq_test"
+save_path = r"/home/ioe/xxxxx/EventTracking/COESOT/videos/video_seq_test/"
 file_folds = os.listdir(data_path)
 
 

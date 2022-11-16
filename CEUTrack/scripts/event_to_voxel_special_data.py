@@ -54,9 +54,9 @@ def transform_points_to_voxels(data_dict={}, voxel_generator=None, device=torch.
 if __name__ == '__main__':
     save_voxel = 10000
     device = torch.device("cuda:4")
-    # data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/train"
-    data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/test"
-    save_path = r"/home/ioe/tcm/CODSOT/CODSOT_video_seqs/test"
+    # data_path = r"/home/ioe/xxxxx/EventTracking/COESOT/train"
+    data_path = r"/home/ioe/xxxxx/EventTracking/COESOT/test"
+    save_path = r"/home/ioe/xxxxx/COESOT/test"
     video_files = os.listdir(data_path)
     dvs_img_interval = 1
     voxel_generator = PointToVoxel(

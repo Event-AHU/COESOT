@@ -25,7 +25,7 @@ class FE108Dataset(BaseDataset):
 
         ground_truth_rect = load_text(str(anno_path), delimiter=',', dtype=np.float64)
 
-        frames_path = '{}/{}/{}'.format(self.base_path, sequence_name, 'stack')
+        frames_path = '{}/{}/{}'.format(self.base_path, sequence_name, "stack")
         frame_list = [frame for frame in os.listdir(frames_path) if frame.endswith(".png") or frame.endswith(".bmp") ]
         frame_list.sort(key=lambda f: int(f[-8:-4]))
         frames_list = [os.path.join(frames_path, frame) for frame in frame_list]

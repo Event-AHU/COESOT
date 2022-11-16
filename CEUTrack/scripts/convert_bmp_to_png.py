@@ -4,9 +4,9 @@ from PIL import Image
 import os
 from pathlib import Path
 
-data_path = r"/home/ioe/tcm/EventTracking/Visevent/train/"
-save_path = r"/home/ioe/tcm/VisEvent/train/"
-match_file = '/home/ioe/tcm/EventTracking/Visevent/train/list.txt'
+data_path = r"/home/ioe/xxxxx/EventTracking/Visevent/train/"
+save_path = r"/home/ioe/xxxxx/VisEvent/train/"
+match_file = '/home/ioe/xxxxx/EventTracking/Visevent/train/list.txt'
 with open(match_file, 'r') as f:
     sequences_list = f.read()
 

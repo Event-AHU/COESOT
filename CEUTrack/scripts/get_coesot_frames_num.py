@@ -1,7 +1,7 @@
 import os
 import pdb
 
-data_path = r"/home/ioe/tcm/CODSOT/CODSOT_video_seqs/test"
+data_path = r"/home/ioe/xxxxx/COESOT/test"
 frame_num=0
 video_files = os.listdir(data_path)
 for videoID in range(len(video_files)):

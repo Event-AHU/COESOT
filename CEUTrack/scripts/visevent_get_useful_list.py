@@ -14,8 +14,8 @@ import numpy as np
 
 if __name__ == '__main__':
     device = torch.device("cuda:4")
-    data_path = r"/home/ioe/tcm/EventTracking/Visevent/train"
-    save_path = r"/home/ioe/tcm/EventTracking/Visevent/train"
+    data_path = r"/home/ioe/xxxxx/EventTracking/Visevent/train"
+    save_path = r"/home/ioe/xxxxx/EventTracking/Visevent/train"
     video_files = os.listdir(data_path)
 
     for videoID in range(len(video_files)):

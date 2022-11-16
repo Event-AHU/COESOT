@@ -140,7 +140,7 @@ def extract_rgb(rgb_file_path, save_path_rgb):
 
 
 def main():
-    aedat_path = '/home/ioe/tcm/EventTracking/CODSOT/CODSOT233/CODSOT_external_sequences/dvSave-2022_08_18_16_57_16'
+    aedat_path = '/home/ioe/xxxxx/EventTracking/COESOT/COESOT233/COESOT_external_sequences/dvSave-2022_08_18_16_57_16'
     dvs_img_interval = 1
     for root, dirs, files in os.walk(aedat_path):
         for file in files:

@@ -10,10 +10,10 @@ import os
 import shutil
 import shutil
 
-# data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/test"
-# save_path = r"/home/ioe/tcm/CODSOT/CODSOT_video_seqs/test"
-data_path = r"/media/ioe/2t/CODSOT_external_sequences"
-save_path = r"/home/ioe/tcm/CODSOT/CODSOT_video_seqs/test"
+# data_path = r"/home/ioe/xxxxx/EventTracking/COESOT/test"
+# save_path = r"/home/ioe/xxxxx/COESOT/test"
+data_path = r"/media/ioe/2t/COESOT_external_sequences"
+save_path = r"/home/ioe/xxxxx/COESOT/test"
 file_folds = os.listdir(data_path)
 
 for videoID in range(len(file_folds)):

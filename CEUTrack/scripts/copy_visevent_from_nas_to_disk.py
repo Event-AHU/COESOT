@@ -10,9 +10,9 @@ import os
 import shutil
 import shutil
 
-data_path = r"/home/ioe/tcm/EventTracking/Visevent/train"
-save_path = r"/home/ioe/tcm/VisEvent/train"
-list_fold = r"/home/ioe/tcm/EventTracking/Visevent/train/list.txt"
+data_path = r"/home/ioe/xxxxx/EventTracking/Visevent/train"
+save_path = r"/home/ioe/xxxxx/VisEvent/train"
+list_fold = r"/home/ioe/xxxxx/EventTracking/Visevent/train/list.txt"
 file_folds = os.listdir(data_path)
 
 with open(list_fold, 'r') as f:

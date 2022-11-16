@@ -20,7 +20,7 @@ def to_timesurface_numpy(events, sensor_size=[346, 260, 3], tau=10, decay="lin")
 
 if __name__ == '__main__':
     device = torch.device("cuda:0")
-    data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/test"
+    data_path = r"/home/ioe/xxxxx/EventTracking/COESOT/test"
     save_path = data_path
     video_files = os.listdir(data_path)
     dvs_img_interval = 1

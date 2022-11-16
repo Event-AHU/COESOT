@@ -11,8 +11,8 @@ from spconv.pytorch.utils import PointToVoxel
 from dv import AedatFile
 import numpy as np
 
-# data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/train"
-data_path = r"/media/ioe/2t/CODSOT_external_sequences"
+# data_path = r"/home/ioe/xxxxx/EventTracking/COESOT/train"
+data_path = r"/media/ioe/2t/COESOT_external_sequences"
 
 video_files = os.listdir(data_path)
 for videoID in range(len(video_files)):

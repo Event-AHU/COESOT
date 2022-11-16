@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from scipy.ndimage.filters import  *
 import pandas as pd
 
-data_path = r"/home/ioe/tcm/CODSOT/CODSOT_video_seqs/test/"
+data_path = r"/home/ioe/xxxxx/COESOT/test/"
 match_file = data_path+'list.txt'
 with open(match_file, 'r') as f:
     sequences_list = f.read()

@@ -106,7 +106,7 @@ class ImageReconstructor:
             # Post-processing, e.g bilateral filter (on CPU)
             out = self.image_filter(out)
 
-            savePath = '/home/ioe/tcm/event_CODSOT/rpg_e2vid-master/reconstruct_images/'
+            savePath = '/home/ioe/xxxxx/event_COESOT/rpg_e2vid-master/reconstruct_images/'
             savePath = save_img_path
             # cv2.imwrite(savePath, out)
             cv2.imwrite(os.path.join(savePath, 'frame{:04d}'.format(i) + '.png'), out)

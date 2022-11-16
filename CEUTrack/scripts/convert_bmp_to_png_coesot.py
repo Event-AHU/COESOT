@@ -4,7 +4,7 @@ from PIL import Image
 import os
 from pathlib import Path
 
-data_path = r"/home/ioe/tcm/EventTracking/CODSOT/CODSOT_video_seqs/train/"
+data_path = r"/home/ioe/xxxxx/EventTracking/COESOT/train/"
 save_path = data_path
 match_file = data_path+'list.txt'
 with open(match_file, 'r') as f:

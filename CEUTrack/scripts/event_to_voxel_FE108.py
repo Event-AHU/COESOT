@@ -56,10 +56,10 @@ if __name__ == '__main__':
     os.environ['CUDA_VISIBLE_DEVICES'] = "5"
     save_voxel = 10000
     device = torch.device("cuda:0")
-    data_path = r"/home/ioe/tcm/EventTracking/FE108/train"
-    save_path = r"/home/ioe/tcm/FE108/train"
-    # data_path = r"/home/ioe/tcm/EventTracking/FE108/train"
-    # save_path = r"/home/ioe/tcm/FE108/train"
+    data_path = r"/home/ioe/xxxxx/EventTracking/FE108/train"
+    save_path = r"/home/ioe/xxxxx/FE108/train"
+    # data_path = r"/home/ioe/xxxxx/EventTracking/FE108/train"
+    # save_path = r"/home/ioe/xxxxx/FE108/train"
     video_files = os.listdir(data_path)
     dvs_img_interval = 1
     voxel_generator = PointToVoxel(
@@ -112,7 +112,7 @@ if __name__ == '__main__':
         frame_all = []
         frame_exposure_time = []
         frame_interval_time = []
-        match_file = '/home/ioe/tcm/EventTracking/FE108/pair.txt'
+        match_file = '/home/ioe/xxxxx/EventTracking/FE108/pair.txt'
         pair = {}
         with open(match_file, 'r') as f:
             for line in f.readlines():

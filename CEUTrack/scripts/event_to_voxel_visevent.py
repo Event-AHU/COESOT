@@ -54,9 +54,9 @@ def transform_points_to_voxels(data_dict={}, voxel_generator=None, device=torch.
 if __name__ == '__main__':
     save_voxel = 10000
     device = torch.device("cuda:7")
-    data_path = r"/home/ioe/tcm/EventTracking/Visevent/train"
-    save_path = r"/home/ioe/tcm/VisEvent/train"
-    match_file = '/home/ioe/tcm/EventTracking/Visevent/train/pair.txt'
+    data_path = r"/home/ioe/xxxxx/EventTracking/Visevent/train"
+    save_path = r"/home/ioe/xxxxx/VisEvent/train"
+    match_file = '/home/ioe/xxxxx/EventTracking/Visevent/train/pair.txt'
     with open(match_file, 'r') as f:
         sequences_list = f.read()
     video_files = os.listdir(data_path)
