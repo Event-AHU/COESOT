@@ -67,6 +67,7 @@ A large-scale benchmark dataset for color-event based visual tracking
 
 
 # EFUTrack
+A unified framework for color-event tracking. 
 
 [[Models](xxx)]
 [[Raw Results](xxx)]
@@ -128,7 +129,7 @@ python tracking/profile_model.py --script efutrack --config ceutrack_coesot
 
 
 ### Acknowledgments
-* Thanks for the [OSTrack](https://github.com/botaoye/OSTrack), [PyTracking](https://github.com/visionml/pytracking) and [ViT](https://github.com/rwightman/pytorch-image-models) library. 
+* Thanks for the [OSTrack](https://github.com/botaoye/OSTrack), [PyTracking](https://github.com/visionml/pytracking) and [ViT](https://github.com/rwightman/pytorch-image-models) library for a quickly implement.
 
 
 ### Citation: 
