@@ -46,7 +46,7 @@ A large-scale benchmark dataset for color-event based visual tracking
 
 ### COESOT_eval_toolkit
 1. unzip the COESOT_eval_toolkit.zip, and open it with Matlab (over Matlab R2020).
-2. add your tracking  [results](xxx)  in `$/coesot_tracking_results/` and modify the name in `$/utils/config_tracker.m` 
+2. add your tracking results and [baseline results](xxx)  in `$/coesot_tracking_results/` and modify the name in `$/utils/config_tracker.m` 
 
 3. run `Evaluate_COESOT_benchmark_SP_PR_only.m` for the overall performance evaluation, including SR, PR, NPR.
 
@@ -58,15 +58,15 @@ A large-scale benchmark dataset for color-event based visual tracking
 5. run `plot_radar.m` for attributes radar figrue plot.
 
 <p align="center">
-  <img width="40%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/radar1.png" alt="Radar"/><img width="60%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/BOC_score.jpg" alt="Radar"/>
+  <img width="45%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/radar1.png" alt="Radar"/><img width="55%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/BOC_score.jpg" alt="Radar"/>
 </p>
 
-6. run `Evaluate_COESOT_benchmark_attributes.m` for 17 attributes analysis and figure saved in `$/res_fig/`. 
+6. run `Evaluate_COESOT_benchmark_attributes.m` for attributes analysis and figure saved in `$/res_fig/`. 
 
 
 
 
-## EFUTrack
+# EFUTrack
 
 [[Models](xxx)]
 [[Raw Results](xxx)]
@@ -103,32 +103,32 @@ Download the model weights from [Google Drive]()
 Put the downloaded weights on `$/output/checkpoints/train/efutrack`
 
 
-## Train & Test  & Evaluation
+## Train & Test & Evaluation
 ```
     # train
     export CUDA_VISIBLE_DEVICES=0
-    python tracking/train.py --script ceutrack --config vitb_256_mae_ce_32x4_coesot_ep100  \
+    python tracking/train.py --script ceutrack --config ceutrack_coesot  \
     --save_dir ./output --mode multiple --nproc_per_node 1 --use_wandb  0
     # test
-    python tracking/test.py   ceutrack vitb_256_mae_ce_32x4_coesot_ep100 --dataset coesot --threads 4 --num_gpus 1
+    python tracking/test.py   ceutrack ceutrack_coesot --dataset coesot --threads 4 --num_gpus 1
     # eval
-    python tracking/analysis_results.py --dataset coesot  --parameter_name vitb_256_mae_ce_32x4_coesot_ep100
+    python tracking/analysis_results.py --dataset coesot  --parameter_name ceutrack_coesot
 ```
+
+
 
 
 ### Test FLOPs, and Speed
 *Note:* The speeds reported in our paper were tested on a single RTX 3090 GPU.
 
 ```
-# Profiling vitb_256_mae_ce_32x4_coesot_ep100
-python tracking/profile_model.py --script efutrack --config vitb_256_mae_ce_32x4_coesot_ep100
+# Profiling ceutrack_coesot
+python tracking/profile_model.py --script efutrack --config ceutrack_coesot
 ```
 
 
-
-
 ### Acknowledgments
-* Thanks for the [OSTrack](https://github.com/botaoye/OSTrack) and [PyTracking](https://github.com/visionml/pytracking) library 
+* Thanks for the [OSTrack](https://github.com/botaoye/OSTrack), [PyTracking](https://github.com/visionml/pytracking) and [ViT](https://github.com/rwightman/pytorch-image-models) library. 
 
 
 ### Citation: 
