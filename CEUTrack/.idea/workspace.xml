@@ -2,41 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f1c363b-ded1-4ae8-bcd2-a630f8925555" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CEUTrack.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test/evaluation/fe108dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/evaluation/fe108dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/coesot_choose_videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/coesot_choose_videos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/convert_bmp_to_png.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_bmp_to_png.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/convert_bmp_to_png_coesot.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_bmp_to_png_coesot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/convert_bmp_to_png_coesot_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_bmp_to_png_coesot_local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/convert_event_to_timestamp.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_event_to_timestamp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/convert_event_to_timestamp_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_event_to_timestamp_new.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/convert_event_to_timestamp_new2.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/convert_event_to_timestamp_new2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/copy_delete_folds_from_nasto_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/copy_delete_folds_from_nasto_local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/copy_gtbbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/copy_gtbbox.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/copy_rgb_voxel_from_nas_to_disk.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/copy_rgb_voxel_from_nas_to_disk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/copy_visevent_from_nas_to_disk.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/copy_visevent_from_nas_to_disk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/event_to_voxel_FE108.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/event_to_voxel_FE108.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/event_to_voxel_coesot.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/event_to_voxel_coesot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/event_to_voxel_special_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/event_to_voxel_special_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/event_to_voxel_visevent.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/event_to_voxel_visevent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/extract_test_videos.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/extract_test_videos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/get_coesot_frames_num.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/get_coesot_frames_num.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/get_dataset_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/get_dataset_lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/image_reconstructor.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/image_reconstructor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/load_nas_to_server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/load_nas_to_server.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/plot_coesot_center.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/plot_coesot_center.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/plot_coesot_center2.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/plot_coesot_center2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/read_aedat4.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/read_aedat4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/run_reconstruction_ours.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/run_reconstruction_ours.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/stack_event_to_rgb.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/stack_event_to_rgb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/visevent_get_useful_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/visevent_get_useful_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

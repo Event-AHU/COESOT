@@ -1,7 +1,7 @@
 # COESOT 
 A large-scale benchmark dataset for color-event based visual tracking 
 
-[Revisiting Color-Event based Tracking: A Unified Network, Dataset, and Metric](https://arxiv.org/abs/).
+[Revisiting Color-Event based Tracking: A Unified Network, Dataset, and Metric](https://arxiv.org/abs/xxx).
 
 
 
@@ -45,12 +45,13 @@ A large-scale benchmark dataset for color-event based visual tracking
 ```
 
 ### COESOT_eval_toolkit
-1. unzip the COESOT_eval_toolkit.zip, and open it with matlab (over R2020).
-2. add your tracking results in `$/coesot_tracking_results/` and modify the name in `$/utils/config_tracker.m` 
-3. run `Evaluate_COESOT_benchmark_SP_PR_only.m` for the overall performance evaluation, including SR, PR, NPR
+1. unzip the COESOT_eval_toolkit.zip, and open it with Matlab (over Matlab R2020).
+2. add your tracking  [results](xxx)  in `$/coesot_tracking_results/` and modify the name in `$/utils/config_tracker.m` 
+
+3. run `Evaluate_COESOT_benchmark_SP_PR_only.m` for the overall performance evaluation, including SR, PR, NPR.
 
 <p align="center">
-  <img width="85%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/SRPRNPR.jpg" alt="SR_PR_NPR"/>
+  <img width="100%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/SRPRNPR.jpg" alt="SR_PR_NPR"/>
 </p>
 
 4. run `plot_BOC.m` for BOC score evaluation and figure plot.
@@ -59,7 +60,7 @@ A large-scale benchmark dataset for color-event based visual tracking
 6. run `plot_radar.m` for attributes radar figrue plot.
 
 <p align="center">
-  <img width="85%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/radar1.png" alt="Radar"/>
+  <img width="50%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/radar1.png" alt="Radar"/>
 </p>
 
 
