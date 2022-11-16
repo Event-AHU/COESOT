@@ -64,8 +64,7 @@ A large-scale benchmark dataset for color-event based visual tracking
 7. run `plot_radar.m` for attributes radar figrue plot.
 
 <p align="center">
-  <img width="50%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/radar1.png" alt="Radar"/>
-  <img width="50%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/BOC_score.jpg" alt="Radar"/>
+  <img width="50%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/radar1.png" alt="Radar"/><img width="50%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/BOC_score.jpg" alt="Radar"/>
 </p>
 
 
