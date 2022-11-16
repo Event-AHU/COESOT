@@ -107,10 +107,10 @@ Put the downloaded weights on `EFUTrack/output/checkpoints/train/efutrack`
 ```
     # train
     export CUDA_VISIBLE_DEVICES=0
-    python tracking/train.py --script ostrack --config vitb_256_mae_ce_32x4_coesot_ep100  \
+    python tracking/train.py --script ceutrack --config vitb_256_mae_ce_32x4_coesot_ep100  \
     --save_dir ./output --mode multiple --nproc_per_node 1 --use_wandb  0
     # test
-    python tracking/test.py   ostrack vitb_256_mae_ce_32x4_coesot_ep100 --dataset coesot --threads 20 --num_gpus 1
+    python tracking/test.py   ceutrack vitb_256_mae_ce_32x4_coesot_ep100 --dataset coesot --threads 20 --num_gpus 1
     # eval
     python tracking/analysis_results.py --dataset coesot  --parameter_name vitb_256_mae_ce_32x4_coesot_ep100
 ```

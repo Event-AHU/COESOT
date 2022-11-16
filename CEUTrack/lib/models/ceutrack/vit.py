@@ -33,7 +33,7 @@ from timm.models.layers import Mlp, DropPath, trunc_normal_, lecun_normal_
 from timm.models.registry import register_model
 
 from lib.models.layers.patch_embed import PatchEmbed
-from lib.models.efutrack.base_backbone import BaseBackbone
+from lib.models.ceutrack.base_backbone import BaseBackbone
 
 
 class Attention(nn.Module):

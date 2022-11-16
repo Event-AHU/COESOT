@@ -11,7 +11,6 @@ import torch.nn.functional as F
 from timm.models.layers import to_2tuple
 
 from lib.models.layers.patch_embed import PatchEmbed, PatchEmbed_event, xcorr_depthwise
-from lib.models.layers.cross_attn import CrossAttn, Iter_attn
 from .utils import combine_tokens, recover_tokens
 from .vit import VisionTransformer
 from ..layers.attn_blocks import CEBlock

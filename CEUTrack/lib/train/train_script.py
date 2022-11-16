@@ -10,9 +10,9 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 # some more advanced functions
 from .base_functions import *
 # network related
-from lib.models.efutrack import build_efutrack
+from lib.models.ceutrack import build_ceutrack
 # forward propagation related
-from lib.train.actors import EFUTrackActor
+from lib.train.actors import CEUTrackActor
 # for import modules
 import importlib
 
@@ -51,8 +51,8 @@ def run(settings):
         cfg.ckpt_dir = settings.save_dir
 
     # Create network
-    if settings.script_name == "efutrack":
-        net = build_efutrack(cfg)
+    if settings.script_name == "ceutrack":
+        net = build_ceutrack(cfg)
     else:
         raise ValueError("illegal script name")
 
@@ -68,11 +68,11 @@ def run(settings):
     settings.distill = getattr(cfg.TRAIN, "DISTILL", False)
     settings.distill_loss_type = getattr(cfg.TRAIN, "DISTILL_LOSS_TYPE", "KL")
     # Loss functions and Actors
-    if settings.script_name == "efutrack":
+    if settings.script_name == "ceutrack":
         focal_loss = FocalLoss()
         objective = {'giou': giou_loss, 'l1': l1_loss, 'focal': focal_loss, 'cls': BCEWithLogitsLoss()}
         loss_weight = {'giou': cfg.TRAIN.GIOU_WEIGHT, 'l1': cfg.TRAIN.L1_WEIGHT, 'focal': cfg.TRAIN.FOCAL_WEIGHT, 'cls': 1.0}
-        actor = EFUTrackActor(net=net, objective=objective, loss_weight=loss_weight, settings=settings, cfg=cfg)
+        actor = CEUTrackActor(net=net, objective=objective, loss_weight=loss_weight, settings=settings, cfg=cfg)
     else:
         raise ValueError("illegal script name")
 

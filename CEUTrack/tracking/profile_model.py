@@ -20,7 +20,7 @@ def parse_args():
     """
     parser = argparse.ArgumentParser(description='Parse args for training')
     # for train
-    parser.add_argument('--script', type=str, default='efutrack', choices=['efutrack'],
+    parser.add_argument('--script', type=str, default='ceutrack', choices=['ceutrack'],
                         help='training script name')
     parser.add_argument('--config', type=str, default='vitb_256_mae_ce_32x4_coesot_ep100', help='yaml configure file name')
     args = parser.parse_args()
@@ -106,9 +106,9 @@ if __name__ == "__main__":
     z_sz = cfg.TEST.TEMPLATE_SIZE
     x_sz = cfg.TEST.SEARCH_SIZE
 
-    if args.script == "efutrack":
+    if args.script == "ceutrack":
         model_module = importlib.import_module('lib.models')
-        model_constructor = model_module.build_efutrack
+        model_constructor = model_module.build_ceutrack
         model = model_constructor(cfg, training=False)
         # get the template and search
         template = torch.randn(bs, 3, z_sz, z_sz)

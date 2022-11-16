@@ -1,5 +1,5 @@
 """
-Basic efutrack model.
+Basic ceutrack model.
 """
 import math
 import os
@@ -10,14 +10,14 @@ from torch import nn
 from torch.nn.modules.transformer import _get_clones
 
 from lib.models.layers.head import build_box_head
-from lib.models.efutrack.vit import vit_base_patch16_224
-from lib.models.efutrack.vit_ce import vit_large_patch16_224_ce, vit_base_patch16_224_ce
-# from lib.models.efutrack.vit_ce_BACKUPS import vit_large_patch16_224_ce, vit_base_patch16_224_ce
+from lib.models.ceutrack.vit import vit_base_patch16_224
+from lib.models.ceutrack.vit_ce import vit_large_patch16_224_ce, vit_base_patch16_224_ce
+# from lib.models.ceutrack.vit_ce_BACKUPS import vit_large_patch16_224_ce, vit_base_patch16_224_ce
 from lib.utils.box_ops import box_xyxy_to_cxcywh
 
 
-class EFUTrack(nn.Module):
-    """ This is the base class for efutrack """
+class CEUTrack(nn.Module):
+    """ This is the base class for ceutrack """
 
     def __init__(self, transformer, box_head, aux_loss=False, head_type="CORNER"):
         """ Initializes the model.
@@ -106,10 +106,10 @@ class EFUTrack(nn.Module):
             raise NotImplementedError
 
 
-def build_efutrack(cfg, training=True):
+def build_ceutrack(cfg, training=True):
     current_dir = os.path.dirname(os.path.abspath(__file__))  # This is your Project Root
     pretrained_path = os.path.join(current_dir, '../../../pretrained_models')
-    if cfg.MODEL.PRETRAIN_FILE and ('EFUTrack' not in cfg.MODEL.PRETRAIN_FILE) and training:
+    if cfg.MODEL.PRETRAIN_FILE and ('CEUTrack' not in cfg.MODEL.PRETRAIN_FILE) and training:
         pretrained = os.path.join(pretrained_path, cfg.MODEL.PRETRAIN_FILE)
     else:
         pretrained = ''
@@ -144,14 +144,14 @@ def build_efutrack(cfg, training=True):
 
     box_head = build_box_head(cfg, hidden_dim)
 
-    model = EFUTrack(
+    model = CEUTrack(
         backbone,
         box_head,
         aux_loss=False,
         head_type=cfg.MODEL.HEAD.TYPE,
     )
 
-    if 'EFUTrack' in cfg.MODEL.PRETRAIN_FILE and training:
+    if 'CEUTrack' in cfg.MODEL.PRETRAIN_FILE and training:
         checkpoint = torch.load(cfg.MODEL.PRETRAIN_FILE, map_location="cpu")
         missing_keys, unexpected_keys = model.load_state_dict(checkpoint["net"], strict=False)
         print('Load pretrained model from: ' + cfg.MODEL.PRETRAIN_FILE)

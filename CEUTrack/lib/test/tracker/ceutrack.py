@@ -1,6 +1,6 @@
 import math
 
-from lib.models.efutrack import build_efutrack
+from lib.models.ceutrack import build_ceutrack
 from lib.test.tracker.basetracker import BaseTracker
 import torch
 import copy
@@ -17,10 +17,10 @@ from lib.utils.box_ops import clip_box
 from lib.utils.ce_utils import generate_mask_cond
 
 
-class EFUTrack(BaseTracker):
+class CEUTrack(BaseTracker):
     def __init__(self, params, dataset_name):
-        super(EFUTrack, self).__init__(params)
-        network = build_efutrack(params.cfg, training=False)
+        super(CEUTrack, self).__init__(params)
+        network = build_ceutrack(params.cfg, training=False)
         network.load_state_dict(torch.load(self.params.checkpoint, map_location='cpu')['net'], strict=True)
         self.cfg = params.cfg
         self.network = network.cuda()
@@ -211,4 +211,4 @@ class EFUTrack(BaseTracker):
 
 
 def get_tracker_class():
-    return EFUTrack
+    return CEUTrack

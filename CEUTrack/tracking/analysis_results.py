@@ -33,9 +33,9 @@ if __name__ == '__main__':
     # trackers.extend(trackerlist('dimp', 'dimp50', None, range(0,5), 'DiMP50'))
     # trackers.extend(trackerlist('dimp', 'prdimp18', None, range(0,5), 'PrDiMP18'))
     # trackers.extend(trackerlist('dimp', 'prdimp50', None, range(0,5), 'PrDiMP50'))
-    """efutrack"""
-    trackers.extend(trackerlist(name='efutrack', parameter_name=args.parameter_name, dataset_name=dataset_name,
-                                run_ids=None, display_name='EFUTrack256'))
+    """ceutrack"""
+    trackers.extend(trackerlist(name='ceutrack', parameter_name=args.parameter_name, dataset_name=dataset_name,
+                                run_ids=None, display_name='CEUTrack256'))
     dataset = get_dataset(dataset_name)
     # dataset = get_dataset('otb', 'nfs', 'uav', 'tc128ce')
     # plot_results(trackers, dataset, 'OTB2015', merge_results=True, plot_types=('success', 'norm_prec'),
