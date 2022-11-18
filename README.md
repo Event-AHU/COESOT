@@ -51,14 +51,14 @@ A large-scale benchmark dataset for color-event based visual tracking
 3. run `Evaluate_COESOT_benchmark_SP_PR_only.m` for the overall performance evaluation, including SR, PR, NPR.
 
 <p align="left">
-  <img width="100%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/SRPRNPR.jpg" alt="SR_PR_NPR"/>
+  <img width="100%" src="./figures/SRPRNPR.jpg" alt="SR_PR_NPR"/>
 </p>
 
 4. run `plot_BOC.m` for BOC score evaluation and figure plot.
 5. run `plot_radar.m` for attributes radar figrue plot.
 
 <p align="center">
-  <img width="45%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/radar1.png" alt="Radar"/><img width="55%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/BOC_score.jpg" alt="Radar"/>
+  <img width="45%" src="./figures/radar1.png" alt="Radar"/><img width="55%" src="./figures/BOC_score.jpg" alt="Radar"/>
 </p>
 
 6. run `Evaluate_COESOT_benchmark_attributes.m` for attributes analysis and figure saved in `$/res_fig/`. 
@@ -66,15 +66,15 @@ A large-scale benchmark dataset for color-event based visual tracking
 
 
 
-# EFUTrack
+# CEUTrack
 A unified framework for color-event tracking. 
 
 [[Models](xxx)]
 [[Raw Results](https://pan.baidu.com/s/1ZCpz9qvrirwnyK-egFPbCg )] 提取码：zisx
-[[Training logs](https://pan.baidu.com/s/12KHyJZ-X4UQu0xjsoKEPqg)] 提取码：hnim
+[[Training logs](https://pan.baidu.com/s/12KHyJZ-X4UQu0xjsoKEPqg )] 提取码：hnim
 
 <p align="center">
-  <img width="85%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/framework.jpg" alt="Framework"/>
+  <img width="85%" src="./figures/framework.jpg" alt="Framework"/>
 </p>
 
 
@@ -101,7 +101,7 @@ Then, put the tracking datasets COESOT in `./data`.
 Download pre-trained [MAE ViT-Base weights](https://dl.fbaipublicfiles.com/mae/pretrain/mae_pretrain_vit_base.pth) and put it under `$/pretrained_models`
 
 Download the model weights from [Google Drive]()
-Put the downloaded weights on `$/output/checkpoints/train/efutrack`
+Put the downloaded weights on `$/output/checkpoints/train/ceutrack`
 
 
 ## Train & Test & Evaluation
@@ -124,7 +124,7 @@ Put the downloaded weights on `$/output/checkpoints/train/efutrack`
 
 ```
 # Profiling ceutrack_coesot
-python tracking/profile_model.py --script efutrack --config ceutrack_coesot
+python tracking/profile_model.py --script ceutrack --config ceutrack_coesot
 ```
 
 
