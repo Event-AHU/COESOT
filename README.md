@@ -69,7 +69,7 @@ A large-scale benchmark dataset for color-event based visual tracking
 # CEUTrack
 A unified framework for color-event tracking. 
 
-[[Models](xxx)]
+[[Models](https://pan.baidu.com/s/1B6VPTqoltVCgOCfceK7bTA )] 提取码：0uk0
 [[Raw Results](https://pan.baidu.com/s/1ZCpz9qvrirwnyK-egFPbCg )] 提取码：zisx
 [[Training logs](https://pan.baidu.com/s/12KHyJZ-X4UQu0xjsoKEPqg )] 提取码：hnim
 
