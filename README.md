@@ -100,8 +100,7 @@ Then, put the tracking datasets COESOT in `./data`.
 
 Download pre-trained [MAE ViT-Base weights](https://dl.fbaipublicfiles.com/mae/pretrain/mae_pretrain_vit_base.pth) and put it under `$/pretrained_models`
 
-Download the model weights from [Google Drive]()
-Put the downloaded weights on `$/output/checkpoints/train/ceutrack`
+Download the model weights and put it on `$/output/checkpoints/train/ceutrack`
 
 
 ## Train & Test & Evaluation
