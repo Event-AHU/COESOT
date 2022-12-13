@@ -9,7 +9,6 @@
 </div>
 
 > **[Revisiting Color-Event based Tracking: A Unified Network, Dataset, and Metric](https://arxiv.org/abs/2211.11010)**, Chuanming Tang, Xiao Wang, Ju Huang, Bo Jiang, Lin Zhu, Jianlin Zhang, Yaowei Wang, Yonghong Tian 
-[[Paper](https://arxiv.org/abs/2211.11010)] 
 [[Project](https://sites.google.com/view/coesot/)]
 
 
