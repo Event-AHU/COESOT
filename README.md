@@ -23,11 +23,11 @@
 
 
 ## TODO List 
-- [x] Paper (arXiv) release (2022-12-01)
-- [x] COESOT dataset release (2022-12-01)
-- [x] Evaluation Toolkit release (2022-12-01)
-- [x] Source Code release (2022-12-01)
-- [x] Tracking Models release (2022-12-01)
+- [x] Paper (arXiv) release
+- [x] COESOT dataset release
+- [x] Evaluation Toolkit release
+- [x] Source Code release
+- [x] Tracking Models release
 
 
 ### Demo Video: 
