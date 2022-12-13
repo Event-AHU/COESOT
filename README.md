@@ -15,20 +15,6 @@
 
 
 
- 
-
-
-
-
-
-
-## TODO List 
-- [x] Paper (arXiv) release
-- [x] COESOT dataset release
-- [x] Evaluation Toolkit release
-- [x] Source Code release
-- [x] Tracking Models release
-
 
 ### Demo Video: 
 * [[YouTube](https://youtu.be/_ROv09rvi2k)]
@@ -145,6 +131,14 @@ Download the model weights and put it on `$/output/checkpoints/train/ceutrack`
 # Profiling ceutrack_coesot
 python tracking/profile_model.py --script ceutrack --config ceutrack_coesot
 ```
+
+## TODO List 
+- [x] Paper (arXiv) release
+- [x] COESOT dataset release
+- [x] Evaluation Toolkit release
+- [x] Source Code release
+- [x] Tracking Models release
+
 
 
 ### Acknowledgments
