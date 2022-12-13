@@ -45,19 +45,19 @@
 ```Shell
 ├── COESOT dataset
     ├── Training Subset
-        ├── Video1
-            ├── color_frames
-            ├── event_frames
-            ├── xxx.aedat4
+        ├── dvSave-2021_09_01_06_59_10
+            ├── dvSave-2021_09_01_06_59_10_aps
+            ├── dvSave-2021_09_01_06_59_10_dvs
+            ├── dvSave-2021_09_01_06_59_10.aedat4
             ├── groundtruth.txt
             ├── absent.txt
             ├── start_end_index.txt
         ├── ... 
     ├── Testing Subset
-        ├── Video1
-            ├── color_frames
-            ├── event_frames
-            ├── xxx.aedat4
+        ├── dvSave-2021_07_30_11_04_12
+            ├── dvSave-2021_07_30_11_04_12_aps
+            ├── dvSave-2021_07_30_11_04_12_dvs
+            ├── dvSave-2021_07_30_11_04_12.aedat4
             ├── groundtruth.txt
             ├── absent.txt
             ├── start_end_index.txt
