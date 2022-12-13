@@ -150,7 +150,7 @@ python tracking/profile_model.py --script ceutrack --config ceutrack_coesot
 @article{tang2022coesot,
   title={Revisiting Color-Event based Tracking: A Unified Network, Dataset, and Metric},
   author={Tang, Chuanming and Wang, Xiao and Huang, Ju and Jiang, Bo and Zhu, Lin and Zhang, Jianlin and Wang, Yaowei and Tian, Yonghong},
-  journal={arxiv pre-print arXiv:2211.11010}, 
+  journal={arXiv preprint arXiv:2211.11010},
   year={2022}
 }
 ```
