@@ -1,7 +1,11 @@
 <div align="center">
+ 
 <img src="https://github.com/Event-AHU/COESOT/blob/main/figures/COESOT.png" width="600">
-**A general and large-scale benchmark COESOT dataset for color-event based visual tracking**
-------
+
+ **A general and large-scale benchmark COESOT dataset for color-event based visual tracking**
+
+ ------
+ 
 </div>
 
 > **[Revisiting Color-Event based Tracking: A Unified Network, Dataset, and Metric](https://arxiv.org/abs/2211.11010)**, Chuanming Tang, Xiao Wang, Ju Huang, Bo Jiang, Lin Zhu, Jianlin Zhang, Yaowei Wang, Yonghong Tian 
