@@ -24,8 +24,9 @@
 百度网盘：  链接：https://pan.baidu.com/s/12XDlKABlz3lDkJJEDvsu9A     提取码：AHUT 
 ```
 
-<img src="https://github.com/Event-AHU/COESOT/blob/main/figures/CODSOT_benchmarkSamples.jpg" width="600">
-
+<p align="center">
+  <img width="85%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/CODSOT_benchmarkSamples.jpg" alt="Framework"/>
+</p>
 
 ```Shell
 ├── COESOT dataset
