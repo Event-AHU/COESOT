@@ -1,8 +1,8 @@
 <div align="center">
  
-<img src="https://github.com/Event-AHU/COESOT/blob/main/figures/COESOT.png" width="600">
+<img src="https://github.com/Event-AHU/COESOT/blob/main/figures/COESOT.png" width="600"> 
 
- **A general and large-scale benchmark COESOT dataset for color-event based visual tracking**
+**A general and large-scale benchmark COESOT dataset for color-event based visual tracking**
 
  ------
  
@@ -18,12 +18,13 @@
 * [[YouTube](https://youtu.be/_ROv09rvi2k)]
 
 
+
 ### Dataset Download: 
 ```
 百度网盘：  链接：https://pan.baidu.com/s/12XDlKABlz3lDkJJEDvsu9A     提取码：AHUT 
 ```
 
-
+<img src="https://github.com/Event-AHU/COESOT/blob/main/figures/CODSOT_benchmarkSamples.jpg" width="600">
 
 
 ```Shell
