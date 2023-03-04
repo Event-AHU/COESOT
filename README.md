@@ -21,7 +21,7 @@
 
 ### Dataset Download: 
 ```
-百度网盘：  链接：https://pan.baidu.com/s/12XDlKABlz3lDkJJEDvsu9A     提取码：AHUT 
+Baidu Download link：https://pan.baidu.com/s/12XDlKABlz3lDkJJEDvsu9A     Passcode：AHUT 
 ```
 
 <p align="center">
@@ -52,7 +52,7 @@
 
 ### COESOT_eval_toolkit
 1. unzip the COESOT_eval_toolkit.zip, and open it with Matlab (over Matlab R2020).
-2. add your tracking results and [baseline results (提取码：siaw)](https://pan.baidu.com/s/1YN07LHERxO31zflMUzgK4A)  in `$/coesot_tracking_results/` and modify the name in `$/utils/config_tracker.m` 
+2. add your tracking results and [baseline results (Passcode：siaw)](https://pan.baidu.com/s/1YN07LHERxO31zflMUzgK4A)  in `$/coesot_tracking_results/` and modify the name in `$/utils/config_tracker.m` 
 
 3. run `Evaluate_COESOT_benchmark_SP_PR_only.m` for the overall performance evaluation, including SR, PR, NPR.
 
@@ -75,9 +75,9 @@
 # CEUTrack
 A unified framework for color-event tracking. 
 
-[[Models](https://pan.baidu.com/s/1B6VPTqoltVCgOCfceK7bTA )] 提取码：0uk0
-[[Raw Results](https://pan.baidu.com/s/1ZCpz9qvrirwnyK-egFPbCg )] 提取码：zisx
-[[Training logs](https://pan.baidu.com/s/12KHyJZ-X4UQu0xjsoKEPqg )] 提取码：hnim
+[[Models](https://pan.baidu.com/s/1B6VPTqoltVCgOCfceK7bTA )] Passcode：0uk0
+[[Raw Results](https://pan.baidu.com/s/1ZCpz9qvrirwnyK-egFPbCg )] Passcode：zisx
+[[Training logs](https://pan.baidu.com/s/12KHyJZ-X4UQu0xjsoKEPqg )] Passcode：hnim
 
 <p align="center">
   <img width="85%" src="./figures/framework.jpg" alt="Framework"/>
