@@ -24,10 +24,7 @@
 Baidu Download link：https://pan.baidu.com/s/12XDlKABlz3lDkJJEDvsu9A     Passcode：AHUT 
 ```
 
-<p align="center">
-  <img width="85%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/CODSOT_benchmarkSamples.jpg" alt="Framework"/>
-</p>
-
+The directory should have the below format:
 ```Shell
 ├── COESOT dataset
     ├── Training Subset (827 videos, 160GB)
@@ -49,6 +46,11 @@ Baidu Download link：https://pan.baidu.com/s/12XDlKABlz3lDkJJEDvsu9A     Passco
             ├── start_end_index.txt
         ├── ... 
 ```
+
+<p align="center">
+  <img width="85%" src="https://github.com/Event-AHU/COESOT/blob/main/figures/CODSOT_benchmarkSamples.jpg" alt="Framework"/>
+</p>
+
 
 ### COESOT_eval_toolkit
 1. unzip the COESOT_eval_toolkit.zip, and open it with Matlab (over Matlab R2020).
