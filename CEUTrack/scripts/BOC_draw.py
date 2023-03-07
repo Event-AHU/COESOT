@@ -13,7 +13,7 @@ from os.path import join, normpath
 
 plt.rc('font',family='Times New Roman')
 
-parser = argparse.ArgumentParser(description='Plot VOT eao dis.')
+parser = argparse.ArgumentParser(description='Plot VOT boc dis.')
 parser.add_argument('--dataset', default='COESOT', type=str, help='Year of VOT benchmark')
 
 eps = 1e-5
@@ -34,8 +34,8 @@ def check_marker(marker_used, color_used, m_idx_now, c_idx_now):
     return False
 
 
-def draw_eao(args, max_nums=30, legend_cols=7, legend_rows=4):
-    fig, ax = plt.subplots(figsize=(11, 3))   # set width and height     # 8, 3
+def draw_boc(args, max_nums=30, legend_cols=7, legend_rows=4):
+    fig, ax = plt.subplots(figsize=(11.5, 3.5))   # set width and height     # 8, 3
     ax.set_axisbelow(True)
 
     Colors_style = ['r', 'gold', 'lawngreen', 'aquamarine', 'dodgerblue', 'blue', 'fuchsia']
@@ -47,24 +47,24 @@ def draw_eao(args, max_nums=30, legend_cols=7, legend_rows=4):
     lines = fin.readlines()
 
     trackers = []
-    eaos = []
+    bocs = []
     for line in lines:
-        tracker, eao = line.split(':')
-        eao = eao.split('\n')[0]   # remove \n
+        tracker, boc = line.split(':')
+        boc = boc.split('\n')[0]   # remove \n
         trackers.append(tracker)
-        eaos.append(float(eao))
+        bocs.append(float(boc))
 
     # reorder
-    eaos = np.array(eaos)
-    sort_idx = np.argsort(-eaos)  # decend
-    sort_eaos = sorted(eaos, reverse=True)
+    bocs = np.array(bocs)
+    sort_idx = np.argsort(-bocs)  # decend
+    sort_bocs = sorted(bocs, reverse=True)
     sort_trackers = [trackers[idx] for idx in sort_idx]
 
     # start draw
     max_nums = min(max_nums, len(trackers))
     # legend_nums = min(max_nums, legend_nums)
     sort_trackers = sort_trackers[: max_nums]
-    sort_eaos = sort_eaos[: max_nums]
+    sort_bocs = sort_bocs[: max_nums]
 
     print('We will draw {0} trackers for {1} benchmark'.format(max_nums, args.dataset))
 
@@ -73,7 +73,7 @@ def draw_eao(args, max_nums=30, legend_cols=7, legend_rows=4):
     marker_used = []
     color_used = []
 
-    for i, score in enumerate(sort_eaos):
+    for i, score in enumerate(sort_bocs):
         real_rank = i + 1
         fake_rank = max_nums - i
         color_idx = i % len(Colors_style)
@@ -123,7 +123,7 @@ def draw_eao(args, max_nums=30, legend_cols=7, legend_rows=4):
     # legend
     handles, labels = ax.get_legend_handles_labels()
     plt.legend(flip(handles, 7), flip(labels, 7), loc=9, ncol=legend_cols, bbox_to_anchor=(0.5, -0.25),
-               frameon=False, labelspacing=0.7)
+               frameon=False, labelspacing=0.7, fontsize=12)
 
     # ax.legend(loc='lower center', ncol=legend_cols, bbox_to_anchor=(0.5, -0.65), frameon=False)
 
@@ -152,8 +152,8 @@ def draw_eao(args, max_nums=30, legend_cols=7, legend_rows=4):
     x_fake = list(range(0, max_nums))
     x_fake = [max_nums - x for x in x_fake]
     for i, x in enumerate(x_fake):
-        # plt.vlines(x, 0.1, sort_eaos[i], linestyles='--', linewidth=0.5, colors='grey')
-        plt.axvline(x, 0, (sort_eaos[i]-min_y-0.01)/(max_y - min_y), linestyle=':', linewidth=0.4, color='grey')
+        # plt.vlines(x, 0.1, sort_bocs[i], linestyles='--', linewidth=0.5, colors='grey')
+        plt.axvline(x, 0, (sort_bocs[i]-min_y-0.01)/(max_y - min_y), linestyle=':', linewidth=0.4, color='grey')
 
 
     # show and plot
@@ -176,7 +176,7 @@ def draw_eao(args, max_nums=30, legend_cols=7, legend_rows=4):
 
 if __name__ == '__main__':
     args = parser.parse_args()
-    draw_eao(args)
+    draw_boc(args)
 
 
 
