@@ -134,7 +134,7 @@ class BaseBackbone(nn.Module):
             x += self.search_segment_pos_embed
             z += self.template_segment_pos_embed
 
-        x = combine_tokens(z, x, mode=self.cat_mode)
+        x = combine_tokens(x, z, event_z, event_x, mode=self.cat_mode)
         if self.add_cls_token:
             x = torch.cat([cls_tokens, x], dim=1)
 
