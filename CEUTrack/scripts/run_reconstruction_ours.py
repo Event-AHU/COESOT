@@ -7,9 +7,12 @@ import pandas as pd
 import os
 import cv2
 import pdb
+
+#### the following functions are borrowed from: https://github.com/uzh-rpg/rpg_e2vid 
 from utils.event_readers import FixedSizeEventReader, FixedDurationEventReader
 from utils.inference_utils import events_to_voxel_grid, events_to_voxel_grid_pytorch
 from utils.timers import Timer
+
 import time
 from image_reconstructor import ImageReconstructor
 from options.inference_options import set_inference_options
