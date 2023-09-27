@@ -12,6 +12,9 @@
 [[Project](https://sites.google.com/view/coesot/)]
 
 
+### Update Log 
+* :fire: [2023.09.27] A High Definition (HD) Event based Visual Object Tracking Benchmark Dataset (termed **EventVOT**) is available at
+[[arXiv](https://arxiv.org/abs/2309.14611)] [[Github](https://github.com/Event-AHU/EventVOT_Benchmark)] 
 
 
 ### Demo Video: 
