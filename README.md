@@ -137,6 +137,23 @@ Download the model weights and put it on `$/output/checkpoints/train/ceutrack`
 python tracking/profile_model.py --script ceutrack --config ceutrack_coesot
 ```
 
+
+### Activation Visualization 
+Use the script from: [[show_CAM.py](https://github.com/Event-AHU/COESOT/blob/main/CEUTrack/scripts/show_CAM.py)]
+
+```
+from .show_CAM import getCAM
+getCAM(response, curr_image, self.idx)
+```
+
+<p align="center">
+  <img width="85%" src="./figures/responseMAPs.png" alt="responseMAPs"/>
+</p>
+
+
+
+
+
 ## TODO List 
 - [x] Paper (arXiv) release
 - [x] COESOT dataset release
