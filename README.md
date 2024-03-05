@@ -13,6 +13,9 @@
 
 
 ### Update Log 
+
+* :fire: [2024.03.06] Tracking results of CEUTrack on **VisEvent** dataset is available at [[ceutrack_visevent_dataset_tracking_results.zip](https://github.com/Event-AHU/COESOT/blob/main/ceutrack_visevent_dataset_tracking_results.zip)] 
+
 * :fire: [2023.09.27] A High Definition (HD) Event based Visual Object Tracking Benchmark Dataset (termed **EventVOT**) is available at
 [[arXiv](https://arxiv.org/abs/2309.14611)] [[Github](https://github.com/Event-AHU/EventVOT_Benchmark)] 
 
