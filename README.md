@@ -188,3 +188,14 @@ getCAM(response, curr_image, self.idx)
 ```
 
 
+
+## Star History
+
+<a href="https://star-history.com/#Event-AHU/COESOT&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Event-AHU/COESOT&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Event-AHU/COESOT&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Event-AHU/COESOT&type=Date" />
+ </picture>
+</a>
+
