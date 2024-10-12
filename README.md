@@ -124,6 +124,13 @@ Download pre-trained [MAE ViT-Base weights](https://dl.fbaipublicfiles.com/mae/p
 Download the model weights and put it on `$/output/checkpoints/train/ceutrack`
 
 
+
+* **[Note] More useful scripts can be found from:** 
+```
+https://github.com/Event-AHU/COESOT/tree/main/CEUTrack/scripts
+```
+
+
 ## Train & Test & Evaluation
 ```
     # train
