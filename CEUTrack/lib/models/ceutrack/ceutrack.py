@@ -14,12 +14,12 @@ from lib.models.ceutrack.vit import vit_base_patch16_224
 from lib.models.ceutrack.vit_ce import vit_large_patch16_224_ce, vit_base_patch16_224_ce
 # from lib.models.ceutrack.vit_ce_BACKUPS import vit_large_patch16_224_ce, vit_base_patch16_224_ce
 from lib.utils.box_ops import box_xyxy_to_cxcywh
-
+from lib.models.layers.transformer import build_transformer
 
 class CEUTrack(nn.Module):
     """ This is the base class for ceutrack """
 
-    def __init__(self, transformer, box_head, aux_loss=False, head_type="CORNER"):
+    def __init__(self, transformer, adapter, box_head, aux_loss=False, head_type="CORNER"):
         """ Initializes the model.
         Parameters:
             transformer: torch module of the transformer architecture.
@@ -27,6 +27,10 @@ class CEUTrack(nn.Module):
         """
         super().__init__()
         self.backbone = transformer
+        if adapter is not None:
+            self.adapter = adapter
+        else:
+            self.adapter = None
         self.box_head = box_head
 
         self.aux_loss = aux_loss
@@ -52,11 +56,15 @@ class CEUTrack(nn.Module):
                                     ce_template_mask=ce_template_mask,
                                     ce_keep_rate=ce_keep_rate,
                                     return_last_attn=return_last_attn, )
+        if self.adapter:
+            x = self.adapter(x)
 
         # Forward head
         feat_last = x
         if isinstance(x, list):
             feat_last = x[-1]
+        if feat_last.dim() == 2:
+            feat_last = feat_last.unsqueeze(0) 
         out = self.forward_head(feat_last, None)
 
         out.update(aux_dict)
@@ -76,7 +84,9 @@ class CEUTrack(nn.Module):
         ## dual head   768+768)*256
         enc_opt1 = cat_feature[:, -self.feat_len_s:]
         enc_opt2 = cat_feature[:, :self.feat_len_s]
+        # print('srcs:', enc_opt2.shape)
         enc_opt = torch.cat([enc_opt1, enc_opt2], dim=-1)
+        # print('srcs:', enc_opt.shape)
         opt = (enc_opt.unsqueeze(-1)).permute((0, 3, 2, 1)).contiguous()
         bs, Nq, C, HW = opt.size()
         opt_feat = opt.view(-1, C, self.feat_sz_s, self.feat_sz_s)
@@ -141,11 +151,15 @@ def build_ceutrack(cfg, training=True):
         raise NotImplementedError
 
     backbone.finetune_track(cfg=cfg, patch_start_index=patch_start_index)
-
+    if cfg.MODEL.TRANSFORMER.FLAG == True:
+        adapter = build_transformer(cfg, hidden_dim)
+    else:
+        adapter = None
     box_head = build_box_head(cfg, hidden_dim)
 
     model = CEUTrack(
         backbone,
+        adapter,
         box_head,
         aux_loss=False,
         head_type=cfg.MODEL.HEAD.TYPE,
