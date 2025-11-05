@@ -14,6 +14,9 @@
 
 ### Update Log 
 
+
+* :fire: [2025.11.05] COESOT is accepted by the Journal Pattern Recognition!  
+
 * :fire: [2024.03.12] A New Long-term RGB-Event based Visual Object Tracking Benchmark Dataset (termed **FELT**) is available at
   [[Paper](https://arxiv.org/pdf/2403.05839.pdf)] 
   [[Code](https://github.com/Event-AHU/FELT_SOT_Benchmark)] 
